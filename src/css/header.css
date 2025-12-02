@@ -1,7 +1,8 @@
 .header{
     width: 100%;
     height: 150px;
-    background-color: deeppink;
+    background-color: white;
+    position: fixed;
     .bander{
         width: 100%;
         height: 60px;
@@ -11,19 +12,67 @@
             object-fit: cover;
         }
     }
+.top{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: rosybrown;
     .right{
-        width: 55%;
-        
         background-color: aqua;
+        width:fit-content;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
         padding: 12px 0px;
+        gap: 10px;
         .logo{
-            background-color: lime;
+       
             & img{
                 width: 195px;
                 height: 30px;
                 object-fit: cover;
             }
         }
+        .searchBar{
+            width: 600px;
+            background-color: var(--color-bg);
+            display: flex;
+            align-items: center;
+            border-radius: 4px;
+            padding: 0px 16px;
+            & input{
+                padding: 0px 16px;
+                border: 0;
+                background-color: transparent;
+                outline: unset;
+                &::placeholder{
+                    color: var(--color-place-holder);
+                }
+            }
+            /* .icon{
+                padding: 6px 0px;
+            } */
+          
+        }
     }
+    .left{
+        background-color: limegreen;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        .btn{
+            background-color:pink;
+            border-radius: 8px;
+         .btnLink{
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+         }
+        }
+    }
+}
 
 }

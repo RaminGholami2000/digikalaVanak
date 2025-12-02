@@ -11,3 +11,8 @@
     box-sizing: border-box;
     font-family: yekan;
 }
+:root{
+    --color-icon:#a1a3a8;
+    --color-place-holder:#81858b;
+    --color-bg:#f0f0f1;
+}
